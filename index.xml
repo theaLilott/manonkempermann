@@ -2,9 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manon Kempermann</title>
-    <link>http://localhost:1313/manonkempermann/</link>
+    <link>https://thealilott.github.io/manonkempermann/</link>
     <description>Recent content on Manon Kempermann</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="http://localhost:1313/manonkempermann/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 28 Dec 2024 11:29:23 +0100</lastBuildDate><atom:link href="https://thealilott.github.io/manonkempermann/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://thealilott.github.io/manonkempermann/page/about/</link>
+      <pubDate>Sat, 28 Dec 2024 11:29:23 +0100</pubDate>
+      
+      <guid>https://thealilott.github.io/manonkempermann/page/about/</guid>
+      
+      <description>&lt;p&gt;I am a second semester bachelor&amp;rsquo;s student studying data science and AI at Saarland University, Germany. Besides my studies, I work as a research assistant at the Interdisciplinary Institute for Societal Computing working on a project about electoral advice given by large language models and how to assure alignment with this to the users ideology.&lt;/p&gt;
+&lt;p&gt;I am passionate about AI safety, both in the technical and governace aspect, and believe that it is one of the most pressing issues at this time.&lt;/p&gt;</description>
+      
+    </item>
+    
   </channel>
 </rss>

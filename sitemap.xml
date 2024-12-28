@@ -2,10 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/manonkempermann/categories/</loc>
+    <loc>https://thealilott.github.io/manonkempermann/page/about/</loc>
+    <lastmod>2024-12-28T11:29:23+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/manonkempermann/</loc>
+    <loc>https://thealilott.github.io/manonkempermann/</loc>
+    <lastmod>2024-12-28T11:29:23+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/manonkempermann/tags/</loc>
+    <loc>https://thealilott.github.io/manonkempermann/page/</loc>
+    <lastmod>2024-12-28T11:29:23+01:00</lastmod>
+  </url><url>
+    <loc>https://thealilott.github.io/manonkempermann/categories/</loc>
+  </url><url>
+    <loc>https://thealilott.github.io/manonkempermann/tags/</loc>
   </url>
 </urlset>
