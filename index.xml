@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manon Kempermann</title>
-    <link>https://thealilott.github.io/manonkempermann.github.io/</link>
+    <link>http://localhost:1313/manonkempermann/</link>
     <description>Recent content on Manon Kempermann</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="https://thealilott.github.io/manonkempermann.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language><atom:link href="http://localhost:1313/manonkempermann/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
