@@ -5,17 +5,54 @@
     <link>https://www.manonkempermann.eu/page/</link>
     <description>Recent content in Pages on Manon Kempermann</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Sat, 28 Dec 2024 11:29:23 +0100</lastBuildDate><atom:link href="https://www.manonkempermann.eu/page/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language><atom:link href="https://www.manonkempermann.eu/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
-      <link>https://www.manonkempermann.eu/page/about/</link>
-      <pubDate>Sat, 28 Dec 2024 11:29:23 +0100</pubDate>
+      <title>CV</title>
+      <link>https://www.manonkempermann.eu/page/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.manonkempermann.eu/page/about/</guid>
+      <guid>https://www.manonkempermann.eu/page/cv/</guid>
       
-      <description>&lt;p&gt;I am a second semester bachelor&amp;rsquo;s student studying data science and AI at Saarland University, Germany. Besides my studies, I work as a research assistant at the Interdisciplinary Institute for Societal Computing working on a project about electoral advice given by large language models and how to assure alignment with this to the users ideology.&lt;/p&gt;
-&lt;p&gt;I am passionate about AI safety, both in the technical and governace aspect, and believe that it is one of the most pressing issues at this time.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;manon-kempermann&#34;&gt;Manon Kempermann&lt;/h1&gt;
+&lt;h3 id=&#34;education&#34;&gt;Education&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;BSc &lt;strong&gt;Data Science and AI&lt;/strong&gt;, Saarland University, Germany (2023-2026)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Member of Honours Program of the faculty (top 5% students)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Average grade: 1.2 (~3.8 GPA)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Relevant Class work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MIPS assembly&lt;/strong&gt;: Rock, Paper, Scissors including random number simulator&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C&lt;/strong&gt;: Image edge detector, PageRank&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Java&lt;/strong&gt;: 2048 Game, Route planner, Compiler for C subset to MIPS assembly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scottish Qualification Certificate, Kilgraston School, Scotland, UK (2021-2022)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dresden Trust Scholar&lt;/li&gt;
+&lt;li&gt;Highers in Mathematics (A), Chemistry (A), Human Biology (A), Business Management (A), Latin (A), German (A)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;experience&#34;&gt;Experience&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Research Assistant at the Interdisciplinary Institute for Societal Computing (I2SC) in Saarbrücken, Germany, working on LLM-Alignment in electoral advice (05/2024 - ongoing)&lt;/li&gt;
+&lt;li&gt;Tutor Core Lecture &amp;ldquo;Elements of Data Science and AI&amp;rdquo; at Saarland University (10/2024 - 03/2025)&lt;/li&gt;
+&lt;li&gt;Spring School &amp;ldquo;Clinicum Digitale&amp;rdquo; for digital health at EKFZ Dresden, Germany (03/2024)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;volunteering&#34;&gt;Volunteering&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Accompanying seminars for weltwärts-volunteers as an alumna and teamer at the Internationaler Bund (01/2024 - ongoing)&lt;/p&gt;</description>
       
     </item>
     
