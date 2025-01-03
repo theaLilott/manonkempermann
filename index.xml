@@ -6,7 +6,19 @@
     <description>Recent content on Manon Kempermann</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 31 Dec 2024 10:22:41 +0100</lastBuildDate><atom:link href="https://www.manonkempermann.eu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jan 2025 10:23:21 +0100</lastBuildDate><atom:link href="https://www.manonkempermann.eu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alignment or why we need to think about AI safety</title>
+      <link>https://www.manonkempermann.eu/blog/25_01_intro_alignment_problem/</link>
+      <pubDate>Thu, 02 Jan 2025 10:23:21 +0100</pubDate>
+      
+      <guid>https://www.manonkempermann.eu/blog/25_01_intro_alignment_problem/</guid>
+      
+      <description>&lt;p&gt;I want to begin this blog with an outline of the problem with AI and why we need to pay attention to AI safety.&lt;/p&gt;
+&lt;p&gt;Recently, I caught up with a friend who countered my interest in AI safety by claiming that this focus was “so German”—always overly cautious, regulating everything too much, and thereby slowing down innovation and blocking AI’s potential. While his argument has some merit, I believe there’s a deeper dimension to how AI could go wrong—one that goes beyond misuse, which was essentially his concern. This dimension is referred to as the alignment problem, and it’s what we’ll explore today.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Why I write this blog</title>
       <link>https://www.manonkempermann.eu/blog/24_52_kick_of_blog/</link>

@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Why I write this blog | Manon Kempermann</title>
-<meta property="og:title" content="Why I write this blog | Manon Kempermann" />
-<meta name="twitter:title" content="Why I write this blog | Manon Kempermann" />
-<meta itemprop="name" content="Why I write this blog | Manon Kempermann" />
-<meta name="application-name" content="Why I write this blog | Manon Kempermann" />
+<title itemprop="name">Alignment or why we need to think about AI safety | Manon Kempermann</title>
+<meta property="og:title" content="Alignment or why we need to think about AI safety | Manon Kempermann" />
+<meta name="twitter:title" content="Alignment or why we need to think about AI safety | Manon Kempermann" />
+<meta itemprop="name" content="Alignment or why we need to think about AI safety | Manon Kempermann" />
+<meta name="application-name" content="Alignment or why we need to think about AI safety | Manon Kempermann" />
 <meta property="og:site_name" content="Manon Kempermann" />
 
 <meta name="description" content="Here I write about my journey into AI safety">
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en-gb" />
 <meta name="language" content="en-gb" />
 
-  <link rel="alternate" hreflang="en-gb" href="https://www.manonkempermann.eu/blog/24_52_kick_of_blog/" title="English" />
+  <link rel="alternate" hreflang="en-gb" href="https://www.manonkempermann.eu/blog/25_01_intro_alignment_problem/" title="English" />
 
 
 
@@ -29,9 +29,9 @@
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2024-12-31T10:22:41&#43;0100 />
-    <meta property="article:published_time" content=2024-12-31T10:22:41&#43;0100 />
-    <meta property="og:url" content="https://www.manonkempermann.eu/blog/24_52_kick_of_blog/" />
+    <meta property="og:article:published_time" content=2025-01-02T10:23:21&#43;0100 />
+    <meta property="article:published_time" content=2025-01-02T10:23:21&#43;0100 />
+    <meta property="og:url" content="https://www.manonkempermann.eu/blog/25_01_intro_alignment_problem/" />
 
     
     <meta property="og:article:author" content="Manon Kempermann" />
@@ -46,16 +46,16 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Why I write this blog",
+        "headline": "Alignment or why we need to think about AI safety",
         "author": {
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2024-12-31",
+        "datePublished": "2025-01-02",
         "description": "",
-        "wordCount":  299 ,
+        "wordCount":  732 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2024-12-31",
+        "dateModified": "2025-01-02",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -71,27 +71,29 @@
 <meta name="generator" content="Hugo 0.140.1">
 
     
-    <meta property="og:url" content="https://www.manonkempermann.eu/blog/24_52_kick_of_blog/">
+    <meta property="og:url" content="https://www.manonkempermann.eu/blog/25_01_intro_alignment_problem/">
   <meta property="og:site_name" content="Manon Kempermann">
-  <meta property="og:title" content="Why I write this blog">
-  <meta property="og:description" content="When I started studying Data Science and AI, I was almost entirely interested in the application of AI in other domains of science such as biology or environmental science. I had never really programmed before and did not see myself as a computer scientist. However, having some knowledge about AI seemed promising in these times and liking STEM subjects more than social science, I decided to give it a try.">
+  <meta property="og:title" content="Alignment or why we need to think about AI safety">
+  <meta property="og:description" content="I want to begin this blog with an outline of the problem with AI and why we need to pay attention to AI safety.
+Recently, I caught up with a friend who countered my interest in AI safety by claiming that this focus was “so German”—always overly cautious, regulating everything too much, and thereby slowing down innovation and blocking AI’s potential. While his argument has some merit, I believe there’s a deeper dimension to how AI could go wrong—one that goes beyond misuse, which was essentially his concern. This dimension is referred to as the alignment problem, and it’s what we’ll explore today.">
   <meta property="og:locale" content="en_gb">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
-    <meta property="article:published_time" content="2024-12-31T10:22:41+01:00">
-    <meta property="article:modified_time" content="2024-12-31T10:22:41+01:00">
+    <meta property="article:published_time" content="2025-01-02T10:23:21+01:00">
+    <meta property="article:modified_time" content="2025-01-02T10:23:21+01:00">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Why I write this blog">
-  <meta name="twitter:description" content="When I started studying Data Science and AI, I was almost entirely interested in the application of AI in other domains of science such as biology or environmental science. I had never really programmed before and did not see myself as a computer scientist. However, having some knowledge about AI seemed promising in these times and liking STEM subjects more than social science, I decided to give it a try.">
+  <meta name="twitter:title" content="Alignment or why we need to think about AI safety">
+  <meta name="twitter:description" content="I want to begin this blog with an outline of the problem with AI and why we need to pay attention to AI safety.
+Recently, I caught up with a friend who countered my interest in AI safety by claiming that this focus was “so German”—always overly cautious, regulating everything too much, and thereby slowing down innovation and blocking AI’s potential. While his argument has some merit, I believe there’s a deeper dimension to how AI could go wrong—one that goes beyond misuse, which was essentially his concern. This dimension is referred to as the alignment problem, and it’s what we’ll explore today.">
 
 
     
 
-    <link rel="canonical" href="https://www.manonkempermann.eu/blog/24_52_kick_of_blog/">
+    <link rel="canonical" href="https://www.manonkempermann.eu/blog/25_01_intro_alignment_problem/">
     <link href="/style.min.9fefd2c6b79ba2d16ca8755a6defbed0d3724a14ad11a23011c537ec22744419.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -185,21 +187,33 @@ stroke-linejoin="round" class="feather feather-home">
     <main class="page-content" aria-label="Content">
         <article>
             <header class="header">
-                <h1 class="header-title">Why I write this blog</h1>
+                <h1 class="header-title">Alignment or why we need to think about AI safety</h1>
                 
                 
                 
                 <div class="post-meta">
-                    <time datetime="2024-12-31T10:22:41&#43;01:00" itemprop="datePublished"> 31 Dec 2024 </time>
+                    <time datetime="2025-01-02T10:23:21&#43;01:00" itemprop="datePublished"> 2 Jan 2025 </time>
                 </div>
                 
             </header>
             
             <div class="page-content">
-                <p>When I started studying Data Science and AI, I was almost entirely interested in the application of AI in other domains of science such as biology or environmental science. I had never really programmed before and did not see myself as a computer scientist. However, having some knowledge about AI seemed promising in these times and liking STEM subjects more than social science, I decided to give it a try.</p>
-<p>Over the past year and as I progressed in my studies, my interest shifted more and more towards AI itself. While I started to understand what is going on in the field, I became aware how little education there is about AI given how much it is already used in everyday life and the risks and problems it may have. AI is incredibly complex, yet it will most likely transform society profoundly and could pose risks that may even be existantial. For these reasons, I believe that everyone should have at least a basic understanding of what AI is, the challenges it brings, and possible solutions.</p>
-<p>After many conversations with friends, family, and colleagues over the past few weeks, I decided to create this blog as a space to make discussions about AI safety accessible and easy to understand. At the same time, I see this as an opportunity to document my personal journey into the field of AI safety and to share what I learn along the way.</p>
-<p>I plan to begin this blog by introducing the concept of AI safety—exploring why it matters and what it entails. From there, I will dive into different approaches to solving the challenges, addressing both technical and governance aspects. I am looking forward to share this journey with you and hope that you as much as I learn from these posts!</p>
+                <p>I want to begin this blog with an outline of the problem with AI and why we need to pay attention to AI safety.</p>
+<p>Recently, I caught up with a friend who countered my interest in AI safety by claiming that this focus was “so German”—always overly cautious, regulating everything too much, and thereby slowing down innovation and blocking AI’s potential. While his argument has some merit, I believe there’s a deeper dimension to how AI could go wrong—one that goes beyond misuse, which was essentially his concern. This dimension is referred to as the alignment problem, and it’s what we’ll explore today.</p>
+<h3 id="from-cash-machines-to-spam-detectors">From Cash Machines to Spam Detectors</h3>
+<p>Let’s start with a simple example: an old-fashioned machine like a cash machine. Cash machines today often have digital displays, but their behavior is fairly straightforward. The machine reads the user’s card, asks for a PIN and the desired withdrawal amount, and then dispenses cash. Of course, there are additional steps involved, and errors can occur, but the machine’s behavior is generally unambiguous. If it’s programmed correctly, it will always do what we expect—dispense the correct amount of cash. If it makes a mistake, the problem lies in the program, and we can fix it by correcting the code.</p>
+<p>Now, consider a different kind of machine: the spam detector in your email inbox. What do you expect it to do? It should distinguish between spam and non-spam emails. But how does it decide what is spam? The detector has to learn this distinction.</p>
+<p>We train the spam detector by providing examples of emails that are spam and others that are not. Without going into technical details, you can imagine how you might judge an email as spam—certain features like generic greetings (“Dear User…”) or offers to buy something might signal spam. The detector learns these features and uses them to classify new emails.</p>
+<p>But as you’ve probably experienced, the spam detector isn’t perfect. Sometimes, it flags an important email as spam—a mistake. This happens because the detector didn’t learn correctly how to distinguish between spam and non-spam emails. Unlike the cash machine, where you can fix the problem by changing a line of code, the spam detector’s behavior depends on what it learned from the examples.</p>
+<h3 id="the-alignment-problem-in-complex-systems">The Alignment Problem in Complex Systems</h3>
+<p>As we have seen with the spam detector, when machines learn behavior, there is always the risk that they will learn something different from what we intended. This misalignment becomes even more challenging when the desired behavior involves human values or norms. How do you teach a machine values when humans themselves struggle to define and agree on them?</p>
+<p>This is the essence of the alignment problem. You might think, “If my spam detector gets it wrong, it’s annoying but not a big deal.” But the stakes are much higher with advanced AI systems.</p>
+<p>Take ChatGPT, for example. It also learns behavior—in this case, generating text based on your messages. But unlike the spam detector, its behavior is even less defined. You could ask it a factual question with a clear answer, or you could ask for advice, where the response depends heavily on <em>your</em> values or norms the model might not fully understand.</p>
+<p>Now imagine AI systems far more capable than ChatGPT and might surpass human intelligence in certain areas. If such systems are not aligned with human values, they could pursue goals in ways that harm us, even unintentionally. For instance, an AI system tasked with solving a global problem might take actions we didn’t foresee, causing more harm than good.</p>
+<h3 id="why-alignment-matters">Why Alignment Matters</h3>
+<p>As we’ve seen, machines that learn behavior can misalign with what we expect them to do. The challenge is that this behavior often relies on human values, which are notoriously difficult to teach a machine. The alignment problem lies at the heart of AI safety research because misaligned AI could lead to unintended and potentially harmful outcomes.</p>
+<p>While a misclassified email is a small annoyance, misaligned AI systems operating in high-stakes areas like healthcare, justice, or governance could have far-reaching consequences.</p>
+<p>In the following posts, we will dive deeper into the risks of misaligned AI and examine how realistic these risks are. For now, it is enough to understand that AI safety isn’t only about preventing misuse. It’s about ensuring that AI does what we want it to do, in particular not causing (unintenionally) harm.</p>
 
             </div>
         </article></main>
