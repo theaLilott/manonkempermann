@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Manon Kempermann</title>
-    <link>https://www.manonkempermann.eu/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in Blogs on Manon Kempermann</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 02 Jan 2025 10:23:21 +0100</lastBuildDate><atom:link href="https://www.manonkempermann.eu/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jan 2025 10:23:21 +0100</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alignment or why we need to think about AI safety</title>
-      <link>https://www.manonkempermann.eu/blog/25_01_intro_alignment_problem/</link>
+      <link>http://localhost:1313/blog/25_01_intro_alignment_problem/</link>
       <pubDate>Thu, 02 Jan 2025 10:23:21 +0100</pubDate>
       
-      <guid>https://www.manonkempermann.eu/blog/25_01_intro_alignment_problem/</guid>
+      <guid>http://localhost:1313/blog/25_01_intro_alignment_problem/</guid>
       
       <description>&lt;p&gt;I want to begin this blog with an outline of the problem with AI and why we need to pay attention to AI safety.&lt;/p&gt;
 &lt;p&gt;Recently, I caught up with a friend who countered my interest in AI safety by claiming that this focus was “so German”—always overly cautious, regulating everything too much, and thereby slowing down innovation and blocking AI’s potential. While his argument has some merit, I believe there’s a deeper dimension to how AI could go wrong—one that goes beyond misuse, which was essentially his concern. This dimension is referred to as the alignment problem, and it’s what we’ll explore today.&lt;/p&gt;</description>
@@ -21,10 +21,10 @@
     
     <item>
       <title>Why I write this blog</title>
-      <link>https://www.manonkempermann.eu/blog/24_52_kick_of_blog/</link>
+      <link>http://localhost:1313/blog/24_52_kick_of_blog/</link>
       <pubDate>Tue, 31 Dec 2024 10:22:41 +0100</pubDate>
       
-      <guid>https://www.manonkempermann.eu/blog/24_52_kick_of_blog/</guid>
+      <guid>http://localhost:1313/blog/24_52_kick_of_blog/</guid>
       
       <description>&lt;p&gt;When I started studying Data Science and AI, I was almost entirely interested in the application of AI in other domains of science such as biology or environmental science. I had never really programmed before and did not see myself as a computer scientist. However, having some knowledge about AI seemed promising in these times and liking STEM subjects more than social science, I decided to give it a try.&lt;/p&gt;</description>
       
