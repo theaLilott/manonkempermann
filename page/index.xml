@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Manon Kempermann</title>
-    <link>http://localhost:1313/page/</link>
+    <link>https://www.manonkempermann.eu/page/</link>
     <description>Recent content in Pages on Manon Kempermann</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language><atom:link href="https://www.manonkempermann.eu/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CV</title>
-      <link>http://localhost:1313/page/cv/</link>
+      <link>https://www.manonkempermann.eu/page/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/page/cv/</guid>
+      <guid>https://www.manonkempermann.eu/page/cv/</guid>
       
       <description>&lt;h1 id=&#34;manon-kempermann&#34;&gt;Manon Kempermann&lt;/h1&gt;
 &lt;h3 id=&#34;education&#34;&gt;Education&lt;/h3&gt;
@@ -43,10 +43,14 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;experience&#34;&gt;Experience&lt;/h3&gt;
+&lt;h3 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Research Assistant at the Interdisciplinary Institute for Societal Computing (I2SC) in Saarbrücken, Germany, working on LLM-Alignment in electoral advice (05/2024 - ongoing)&lt;/li&gt;
 &lt;li&gt;Tutor Core Lecture &amp;ldquo;Elements of Data Science and AI&amp;rdquo; at Saarland University (10/2024 - 03/2025)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;extracurricular-education&#34;&gt;Extracurricular Education&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;AI Safety, Ethics and Society&amp;rdquo; Course by the Center for AI Safety (CAIS) (02/2025-05/2025)&lt;/li&gt;
 &lt;li&gt;Spring School &amp;ldquo;Clinicum Digitale&amp;rdquo; for digital health at EKFZ Dresden, Germany (03/2024)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;volunteering&#34;&gt;Volunteering&lt;/h3&gt;

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Dangerous AI - An Overwiew of AI Risks | Manon Kempermann</title>
+<meta property="og:title" content="Dangerous AI - An Overwiew of AI Risks | Manon Kempermann" />
+<meta name="twitter:title" content="Dangerous AI - An Overwiew of AI Risks | Manon Kempermann" />
+<meta itemprop="name" content="Dangerous AI - An Overwiew of AI Risks | Manon Kempermann" />
+<meta name="application-name" content="Dangerous AI - An Overwiew of AI Risks | Manon Kempermann" />
+<meta property="og:site_name" content="Manon Kempermann" />
+
+<meta name="description" content="Here I write about my journey into AI safety">
+<meta itemprop="description" content="Here I write about my journey into AI safety" />
+<meta property="og:description" content="Here I write about my journey into AI safety" />
+<meta name="twitter:description" content="Here I write about my journey into AI safety" />
+
+<meta property="og:locale" content="en-gb" />
+<meta name="language" content="en-gb" />
+
+  <link rel="alternate" hreflang="en-gb" href="https://www.manonkempermann.eu/blog/25_02_ai_risks_overview/" title="English" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2025-03-01T19:11:27&#43;0100 />
+    <meta property="article:published_time" content=2025-03-01T19:11:27&#43;0100 />
+    <meta property="og:url" content="https://www.manonkempermann.eu/blog/25_02_ai_risks_overview/" />
+
+    
+    <meta property="og:article:author" content="Manon Kempermann" />
+    <meta property="article:author" content="Manon Kempermann" />
+    <meta name="author" content="Manon Kempermann" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Dangerous AI - An Overwiew of AI Risks",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2025-03-01",
+        "description": "",
+        "wordCount":  1460 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2025-03-01",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Manon Kempermann"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.140.1">
+
+    
+    <meta property="og:url" content="https://www.manonkempermann.eu/blog/25_02_ai_risks_overview/">
+  <meta property="og:site_name" content="Manon Kempermann">
+  <meta property="og:title" content="Dangerous AI - An Overwiew of AI Risks">
+  <meta property="og:description" content="I am currently taking part in the AI Safety, Ethics, and Society course by the Center for AI Safety (CAIS)1 and will be writing about some key learnings from the course and related discussions here as well. This week, we explored the various risks associated with AI. While I have been reading extensively about AI safety—and, inevitably, AI risks—this discussion brought my attention to certain risks I hadn’t previously considered. At the same time, as I engage more in conversations about AI with friends from different disciplines, I increasingly realize how little awareness exists in the public about these risks.">
+  <meta property="og:locale" content="en_gb">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-03-01T19:11:27+01:00">
+    <meta property="article:modified_time" content="2025-03-01T19:11:27+01:00">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dangerous AI - An Overwiew of AI Risks">
+  <meta name="twitter:description" content="I am currently taking part in the AI Safety, Ethics, and Society course by the Center for AI Safety (CAIS)1 and will be writing about some key learnings from the course and related discussions here as well. This week, we explored the various risks associated with AI. While I have been reading extensively about AI safety—and, inevitably, AI risks—this discussion brought my attention to certain risks I hadn’t previously considered. At the same time, as I engage more in conversations about AI with friends from different disciplines, I increasingly realize how little awareness exists in the public about these risks.">
+
+
+    
+
+    <link rel="canonical" href="https://www.manonkempermann.eu/blog/25_02_ai_risks_overview/">
+    <link href="/style.min.9fefd2c6b79ba2d16ca8755a6defbed0d3724a14ad11a23011c537ec22744419.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://www.manonkempermann.eu/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+    
+</head>
+<body data-theme = "auto" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://www.manonkempermann.eu/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/blog/">
+                        Blog
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/page/cv/">
+                        CV
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Dangerous AI - An Overwiew of AI Risks</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2025-03-01T19:11:27&#43;01:00" itemprop="datePublished"> 1 Mar 2025 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>I am currently taking part in the <em>AI Safety, Ethics, and Society</em> course by the Center for AI Safety (CAIS)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and will be writing about some key learnings from the course and related discussions here as well. This week, we explored the various risks associated with AI. While I have been reading extensively about AI safety—and, inevitably, AI risks—this discussion brought my attention to certain risks I hadn&rsquo;t previously considered. At the same time, as I engage more in conversations about AI with friends from different disciplines, I increasingly realize how little awareness exists in the public about these risks.</p>
+<p>To make things clear straight away, many top AI-researchers<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> and me too think that the risks associated with AI are very serious and it is not exaggerated to talk about large scale risk that have widespread societal, economic, or geopolitical consequences, affecting a large number of people or critical infrastructure or even existential risks that would pose the end of humanity. I hope this article, in very simplified terms, helps explain why  this view is hold and provides a useful perspective to anyone interested.</p>
+<p>Broadly speaking (following the definitions from the <em>AI Safety, Ethics, and Society</em> book<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>), AI risks can be categorized into four major groups: misuse, AI race, organizational risks, and rogue AI. However, these risks are deeply interconnected and are more likely to emerge in combination rather than in isolation. That said, let’s first look into each  individually.</p>
+<h2 id="misuse">Misuse</h2>
+<p>As with almost any technology developed by humans, AI has many dual-use cases, making misuse a foreseeable concern. However, AI presents unique dangers due to its digital nature, making it accessible to virtually anyone with an internet connection.</p>
+<p>While AI can be misused in numerous ways, I will focus on three particularly plausible large-scale risks: misinformation, cyberattacks, and AI warfare.</p>
+<h3 id="misinformation">Misinformation</h3>
+<p>We are already struggling with fake news and deepfakes, which undermine the credibility of media, fuel conspiracy theories, and polarize societies worldwide. As distinguishing misinformation from reality becomes increasingly difficult, AI threatens democracy and societal stability. AI-driven misinformation campaigns may seem like a gradual risk, but their impact should not be underestimated.</p>
+<p>Historically, misinformation has had significant consequences. For example, in the 19th century, <em>yellow journalism</em> in the U.S. played a role in escalating the Spanish-American War<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. AI-generated misinformation, spreading instantly through the internet, could lead to even more severe consequences, including heightened global tensions and the risk of war.</p>
+<h3 id="cyberattacks">Cyberattacks</h3>
+<p>Cyberattacks on critical infrastructure—such as power grids—are already possible without AI, but they require a high level of expertise and skill. AI could dramatically lower this barrier by assisting attackers in planning and executing such attacks. If individuals only need basic prompting skills to jailbreak an AI into generating a strategy for a cyberattack, the likelihood of such attacks will increase significantly.</p>
+<p>Cyberattacks can cripple digital infrastructure, paralyzing societies that depend on electricity and the internet. Unlike AI-assisted bioterrorism—where an AI might help design a deadly virus—cyberattacks do not require interaction with the physical world to cause catastrophic harm. Moreover, the anonymity of cyberattacks makes it difficult to attribute responsibility, potentially escalating tensions between major powers and increasing the risk of war.</p>
+<h3 id="ai-warfare">AI Warfare</h3>
+<p>Misinformation and cyberattacks may contribute to the outbreak of war, but AI itself is poised to play an increasingly direct role in warfare. While AI-powered drones are already in use, they still require human approval for critical decisions. As AI systems become more autonomous, wars could escalate more quickly and unpredictably.</p>
+<p>Historically, individual human decisions have prevented probable catastrophic conflicts, such as during the Cuban Missile Crisis<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. If AI systems were responsible for such decisions, wars could become much harder to control, increasing the likelihood of escalation.</p>
+<p>Of course, these are just a few examples of how AI could be used maliciously at varying levels of severity. Given the almost unrestricted accessibility of AI, its misuse should not be dismissed as an inevitable trade-off for technological progress. The argument that regulation stifles innovation should not overshadow the urgent need for safeguards.</p>
+<h2 id="ai-race">AI Race</h2>
+<p>The Cold War serves as a stark reminder of how technological advancements can fuel dangerous arms races. If AI-driven warfare becomes as strategically important as nuclear weapons, we may face an even greater existential threat. Unlike nuclear weapons, AI cannot easily be contained through disarmament agreements or AI-free zones, making regulation even more challenging.</p>
+<p>However, the risks of AI races extend beyond military applications. The corporate race to develop ever-more-powerful AI systems also presents significant dangers.</p>
+<h3 id="corporate-ai-races">Corporate AI Races</h3>
+<p>It can be argued that we are already in a corporate AI race, where companies compete to release the most advanced AI models as quickly as possible. We see how OpenAI responded to DeepSeek’s breakthrough with its own, even more advanced DeepResearch model within days—before even completing its internal safety evaluations and publishing its system card<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. The economic incentives for developing powerful AI are immense. The company that creates an AI capable of replacing most human labor stands to make billions.</p>
+<p>However, corporate AI races are likely to undermine safety standards. If companies release premature models without rigorous testing, they may overlook new capabilities that could enable  malicious use or lead to rogue AI. This brings us to the next two categories of risks: organizational failures and rogue AI.</p>
+<h2 id="organizational-risks">Organizational Risks</h2>
+<p>So far, we have focused on risks stemming from external actors—whether through misuse or competition. Organizational risks, along with rogue AI, are more internal concerns. The first one primarily involves accidents occurring within AI companies during development.</p>
+<p>Accidents are unavoidable, but in some technologies, their consequences can be catastrophic. Aviation and space travel, for instance, have seen devastating failures due to human error and overlooked safety measures. Given the discussions in this post so far, it seems reasonable to argue that AI development requires similarly stringent safety protocols.</p>
+<p>AI companies bear a major responsibility for ensuring their systems are safe. While governmental regulations can help establish safety standards, compliance ultimately depends on the companies themselves. As we have seen, corporate AI races can erode safety culture. Even a small number of individuals within an organization who disregard safety measures could jeopardize the broader precautions in place.</p>
+<p>To mitigate risks, companies should implement multiple layers of safety checks. For example, red-teaming, a process where security experts actively attempt to find vulnerabilities in AI systems by simulating adversarial attacks, helps identify weaknesses before they can be exploited. Anomaly detection involves using algorithms to monitor AI behavior and flag unexpected or potentially harmful deviations from normal operation. Transparency measures, which include techniques such as explainability research, auditing mechanisms, and open reporting of AI limitations, aim to improve oversight and accountability in AI development. However, all these measures presuppose that AI is controllable—a challenge that leads us to our final risk category.</p>
+<h2 id="rogue-ai">Rogue AI</h2>
+<p>Most technologies developed by humanity pose risks that can be categorized under misuse, competition, or organizational failures. However, AI presents a unique and serious concern: the possibility that it could act independently, pursue its own goals, and escape human control, leading to potentially catastrophic consequences.</p>
+<p>Current AI models already exhibit opaque decision-making processes, making it difficult to control their behavior and ensure alignment with human values. There have been alarming cases where AI has encouraged suicide, engaged in deceptive behavior, or promoted extremist ideologies.</p>
+<p>The <em>Orthogonality Thesis</em><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> suggests that intelligence and goals are independent—meaning a highly intelligent AI could pursue objectives completely misaligned with human interests. It would be reckless to assume that any AI, regardless of its intelligence level, will inherently respect human values or prioritize human well-being.</p>
+<p>I have previously written about the <a href="https://manonkempermann.eu/blog/25_01_intro_alignment_problem/">alignment problem</a> and will likely explore different facets of rogue AI risks in future posts. For now, it is crucial to acknowledge rogue AI as a serious danger—one that is exacerbated by weak organizational safety culture and corporate AI competition.</p>
+<hr>
+<p>We explored on a very high level the four major categories of AI risks and saw how they are not independent of each other. I hope, it became also clear, why  the possibility of large-scale and existential threats posed by AI is not far-fetched. It is probably much easier to build misaligned, dangerous AI than AI that would purely benefit humanity. This is why we urgently need increased efforts in AI safety  that address and mitigate these risks. Right now, we still have control over the direction of AI development and its integration into society, but this window of opportunity may not stay open forever. We should act proactively rather than waiting until it is too late.</p>
+<h3 id="footnotes">Footnotes</h3>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://www.aisafetybook.com/virtual-course">https://www.aisafetybook.com/virtual-course</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.safe.ai/work/statement-on-ai-risk">https://www.safe.ai/work/statement-on-ai-risk</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://www.aisafetybook.com/textbook/overview-of-catastrophic-ai-risks">https://www.aisafetybook.com/textbook/overview-of-catastrophic-ai-risks</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://history.state.gov/milestones/1866-1898/yellow-journalism?utm_source=chatgpt.com">https://history.state.gov/milestones/1866-1898/yellow-journalism?utm_source=chatgpt.com</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p><a href="https://en.wikipedia.org/wiki/Vasily_Arkhipov">https://en.wikipedia.org/wiki/Vasily_Arkhipov</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p><a href="https://openai.com/index/introducing-deep-research/">OpenAi released DeepResearch to Pro Users on February 2, 2025</a>, <a href="https://api-docs.deepseek.com/news/news250120">two weeks after DeepSeek released R1 on January 20, 2025</a>, but <a href="https://openai.com/index/deep-research-system-card/">DeepResearchs system card</a> was published only on February 25, 2025&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7">
+<p><a href="https://www.lesswrong.com/w/orthogonality-thesis">https://www.lesswrong.com/w/orthogonality-thesis</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/theaLilott" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/manon-kempermann-0a8396263/" target="_blank" rel="noopener noreferrer me"
+    title="Linkedin">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 Manon Kempermann.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://www.manonkempermann.eu/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

@@ -2,24 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/25_01_intro_alignment_problem/</loc>
+    <loc>https://www.manonkempermann.eu/blog/</loc>
+    <lastmod>2025-03-01T19:11:27+01:00</lastmod>
+  </url><url>
+    <loc>https://www.manonkempermann.eu/blog/25_02_ai_risks_overview/</loc>
+    <lastmod>2025-03-01T19:11:27+01:00</lastmod>
+  </url><url>
+    <loc>https://www.manonkempermann.eu/</loc>
+    <lastmod>2025-03-01T19:11:27+01:00</lastmod>
+  </url><url>
+    <loc>https://www.manonkempermann.eu/blog/25_01_intro_alignment_problem/</loc>
     <lastmod>2025-01-02T10:23:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2025-01-02T10:23:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-01-02T10:23:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/24_52_kick_of_blog/</loc>
+    <loc>https://www.manonkempermann.eu/blog/24_52_kick_of_blog/</loc>
     <lastmod>2024-12-31T10:22:41+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://www.manonkempermann.eu/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/page/cv/</loc>
+    <loc>https://www.manonkempermann.eu/page/cv/</loc>
   </url><url>
-    <loc>http://localhost:1313/page/</loc>
+    <loc>https://www.manonkempermann.eu/page/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://www.manonkempermann.eu/tags/</loc>
   </url>
 </urlset>
