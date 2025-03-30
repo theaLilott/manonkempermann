@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Manon Kempermann</title>
-    <link>http://localhost:1313/page/</link>
+    <link>https://www.manonkempermann.eu/page/</link>
     <description>Recent content in Pages on Manon Kempermann</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language><atom:link href="https://www.manonkempermann.eu/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CV</title>
-      <link>http://localhost:1313/page/cv/</link>
+      <link>https://www.manonkempermann.eu/page/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/page/cv/</guid>
+      <guid>https://www.manonkempermann.eu/page/cv/</guid>
       
       <description>&lt;h1 id=&#34;manon-kempermann&#34;&gt;Manon Kempermann&lt;/h1&gt;
 &lt;h3 id=&#34;education&#34;&gt;Education&lt;/h3&gt;
