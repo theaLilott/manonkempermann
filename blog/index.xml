@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 08 Apr 2025 15:00:29 +0200</lastBuildDate><atom:link href="https://www.manonkempermann.eu/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Challenge of Measuring Safety in LLMs</title>
-      <link>https://www.manonkempermann.eu/blog/challenge_of_evals/challange_of_measuring_safety/</link>
+      <link>https://www.manonkempermann.eu/blog/challenge_of_evals/challenge_of_measuring_safety/</link>
       <pubDate>Tue, 08 Apr 2025 15:00:29 +0200</pubDate>
       
-      <guid>https://www.manonkempermann.eu/blog/challenge_of_evals/challange_of_measuring_safety/</guid>
+      <guid>https://www.manonkempermann.eu/blog/challenge_of_evals/challenge_of_measuring_safety/</guid>
       
       <description>&lt;p&gt;Before I turn to the challenge of measuring safety of LLMs, I want to give a short clarification on why I think we need to care about the safety of LLMs or AI systems in general.&lt;/p&gt;
 &lt;p&gt;In contrast to other technology humankind has invented before, AI is probably the first one that brings us immense use without us understanding how it works. AI systems are inherently complex and unpredictable systems. They live as a product in the complex economic market and are ultimately used in the complex system of society. An error on any level of this chain can lead to unforeseeable and potentially catastrophic outcome as the effect ripples through to the other levels. Therefore, any individual risk factor of AI is likely to lead to a chain of other risks.&lt;/p&gt;</description>
