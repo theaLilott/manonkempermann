@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">The Challenge of Measuring Safety in LLMs | Manon Kempermann</title>
+<meta property="og:title" content="The Challenge of Measuring Safety in LLMs | Manon Kempermann" />
+<meta name="twitter:title" content="The Challenge of Measuring Safety in LLMs | Manon Kempermann" />
+<meta itemprop="name" content="The Challenge of Measuring Safety in LLMs | Manon Kempermann" />
+<meta name="application-name" content="The Challenge of Measuring Safety in LLMs | Manon Kempermann" />
+<meta property="og:site_name" content="Manon Kempermann" />
+
+<meta name="description" content="Here I write about my journey into AI safety">
+<meta itemprop="description" content="Here I write about my journey into AI safety" />
+<meta property="og:description" content="Here I write about my journey into AI safety" />
+<meta name="twitter:description" content="Here I write about my journey into AI safety" />
+
+<meta property="og:locale" content="en-gb" />
+<meta name="language" content="en-gb" />
+
+  <link rel="alternate" hreflang="en-gb" href="https://www.manonkempermann.eu/blog/challengeofevals/challange_of_measuring_safety/" title="English" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2025-04-08T15:00:29&#43;0200 />
+    <meta property="article:published_time" content=2025-04-08T15:00:29&#43;0200 />
+    <meta property="og:url" content="https://www.manonkempermann.eu/blog/challengeofevals/challange_of_measuring_safety/" />
+
+    
+    <meta property="og:article:author" content="Manon Kempermann" />
+    <meta property="article:author" content="Manon Kempermann" />
+    <meta name="author" content="Manon Kempermann" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "The Challenge of Measuring Safety in LLMs",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2025-04-08",
+        "description": "",
+        "wordCount":  1296 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2025-04-08",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Manon Kempermann"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.140.1">
+
+    
+    <meta property="og:url" content="https://www.manonkempermann.eu/blog/challengeofevals/challange_of_measuring_safety/">
+  <meta property="og:site_name" content="Manon Kempermann">
+  <meta property="og:title" content="The Challenge of Measuring Safety in LLMs">
+  <meta property="og:description" content="Before I turn to the challenge of measuring safety of LLMs, I want to give a short clarification on why I think we need to care about the safety of LLMs or AI systems in general.
+In contrast to other technology humankind has invented before, AI is probably the first one that brings us immense use without us understanding how it works. AI systems are inherently complex and unpredictable systems. They live as a product in the complex economic market and are ultimately used in the complex system of society. An error on any level of this chain can lead to unforeseeable and potentially catastrophic outcome as the effect ripples through to the other levels. Therefore, any individual risk factor of AI is likely to lead to a chain of other risks.">
+  <meta property="og:locale" content="en_gb">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-04-08T15:00:29+02:00">
+    <meta property="article:modified_time" content="2025-04-08T15:00:29+02:00">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Challenge of Measuring Safety in LLMs">
+  <meta name="twitter:description" content="Before I turn to the challenge of measuring safety of LLMs, I want to give a short clarification on why I think we need to care about the safety of LLMs or AI systems in general.
+In contrast to other technology humankind has invented before, AI is probably the first one that brings us immense use without us understanding how it works. AI systems are inherently complex and unpredictable systems. They live as a product in the complex economic market and are ultimately used in the complex system of society. An error on any level of this chain can lead to unforeseeable and potentially catastrophic outcome as the effect ripples through to the other levels. Therefore, any individual risk factor of AI is likely to lead to a chain of other risks.">
+
+
+    
+
+    <link rel="canonical" href="https://www.manonkempermann.eu/blog/challengeofevals/challange_of_measuring_safety/">
+    <link href="/style.min.9fefd2c6b79ba2d16ca8755a6defbed0d3724a14ad11a23011c537ec22744419.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://www.manonkempermann.eu/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+    
+</head>
+<body data-theme = "auto" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/blog/">
+                        Blog
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/page/cv/">
+                        CV
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">The Challenge of Measuring Safety in LLMs</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2025-04-08T15:00:29&#43;02:00" itemprop="datePublished"> 8 Apr 2025 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>Before I turn to the challenge of measuring safety of LLMs, I want to give a short clarification on why I think we need to care about the safety of LLMs or AI systems in general.</p>
+<p>In contrast to other technology humankind has invented before, AI is probably the first one that brings us immense use without us understanding how it works. AI systems are inherently complex and unpredictable systems. They live as a product in the complex economic market and are ultimately used in the complex system of society. An error on any level of this chain can lead to unforeseeable and potentially catastrophic outcome as the effect ripples through to the other levels. Therefore, any individual risk factor of AI is likely to lead to a chain of other risks.</p>
+<p><img src="complex_systems.png" alt="Landscape"></p>
+<p>Concretely, risks stemming from advanced AI can categorised into</p>
+<ul>
+<li>malicious use — human individuals purposefully misusing AI systems to cause harm by for example building autonomous weapons steered by AI</li>
+<li>racing dynamics — the economic incentive of having the best model on the market leading to racing dynamics between AI companies potentially undermining safety measures within companies</li>
+<li>systemic risks — risks that occur from embedding AI tools into society such as gradual disempowerment where society, where our dependency on AI and potential loss of critical thinking weakens our democracy</li>
+<li>rogue AI – risks stemming from misalignment of an AI. An AI could develop goals that are conflicting with our own and then starts to deceive us in order to achieve its own goals against our interest.</li>
+</ul>
+<p>We see, the risk landscape is vast and there might be many other risks we have not even thought of. If we now wanted to tell how safe an AI system is, then we arrive at the dilemma that we must measure what we cannot fully anticipate.</p>
+<p>Nevertheless, we should at least try to quantify in some way how safe AI systems are and this is usually done via evaluations (short evals). Evals inform the general public, policy makers and AI researchers in companies, academia or other research institutions about the capabilities and the safety of the models and can by that guide their decision making.</p>
+<p><img src="evals_inform.png" alt="Landscape"></p>
+<h3 id="types-of-evals">Types of Evals</h3>
+<p>Usually we distinguish two types of evals: capabilities evals and alignment evals. To give a concrete example, let’s say we want to assess whether a malicious user could misuse the AI system to launch a cyber attack. If this is not possible, we would call the AI safe. With capabilities evals, we would measure whether the AI had the capacity or ability of aiding in a successful cyber attack, whereas with alignment evals we would measure the tendency for this behaviour. The AI could be capable of launching a cyber attack, but if it was well-aligned, it would always refuse to help out with such a request. Both types of evals therefore serve different purposes, but are inevitably connected and should both be used to determine which precautions should follow the evaluation.</p>
+<h3 id="threat-modeling">Threat Modeling</h3>
+<p>To come up with these evaluations, one usually starts with defining a threat model. For which kind of threat do I want to measure the safety? What would safety mean in that particular case? Currently threat models are mostly considered in three categories:</p>
+<ul>
+<li>CBRN threats – cybersecurity, bio-risk (such engineered pandemics), radiological and nuclear</li>
+<li>Autonomous adaptation and replication threats – if AI could do AI R&amp;D itself, avoidance of shutdown, if AI was capable of acquiring resources (money, compute, power)</li>
+<li>Development and Assurance Compromise (DAC) – deceptive behaviour, scheming, persuasion, self-awareness</li>
+</ul>
+<p>For example in the case of scheming, it was found by <a href="https://arxiv.org/pdf/2412.04984">Meinke et al. 2025</a> that current Frontier Models such as o1 or Claude 3.5 Sonnet are capable of in-context scheming. If the model was given a goal and a task and while doing the given task discovered that the humans supervising it had conflicting goals, it started to do actions that would for example prevent its own shutdown and later lied about its actions to the human. While these example scenarios were synthetic and the model was explicitly given a certain goal, it is nevertheless worrying that models might be able to scheme in real-world as well.</p>
+<h3 id="eval-approaches">Eval Approaches</h3>
+<p>There are four main approaches to evaluations. The first is benchmarking, which usually involves testing the AI on a collection of standardized questions to determine its capabilities and alignment. For example, a benchmark might test whether an AI can solve complex math problems or if it refuses to provide harmful information.
+However, for some scenarios, we need to observe how an AI behaves in more complex settings or interactions. For this purpose, sandbox evaluations create controlled environments where AI systems can be safely tested. These might simulate online platforms where the AI interacts with simulated users, allowing researchers to observe its behavior when faced with various scenarios without real-world consequences.
+Another strategy is red-teaming, where specialized researchers deliberately stress-test the AI to elicit dangerous behavior. These experts use their knowledge of AI systems and potential vulnerabilities to probe for weaknesses that might not be apparent in standard testing environments.
+Lastly, there&rsquo;s jailbreaking, which tests an AI&rsquo;s resilience to adversarial inputs. For example, while an LLM might typically refuse to explain how to build dangerous devices, certain prompt patterns or character sequences might bypass these safeguards. Since the space of possible inputs is enormous, jailbreaking is increasingly conducted using automated methods that can systematically explore potential vulnerabilities in AI guardrails.
+In general, no single approach is used in isolation but models are tested via all approaches to gain a more comprehensive picture of the AI systems safety.</p>
+<p><img src="approaches.png" alt="Landscape"></p>
+<h3 id="challenges-and-future-directions">Challenges and future directions</h3>
+<p>While evals certainly help in some way to understand the capabilities and the alignment of AIs and it is better to have them then not, current evals face serious limitations and challenges.</p>
+<p>First of all, evals can only prove that a model is unsafe, but never that it is safe because we may just failed to elicit the behaviour during the evals. But there are also risks we cannot test for either because testing for it would be dangerous in itself or because the problem is too complex to evaluate it in a sandbox setting. As models become more multimodal, we need evals to account for that. Then there is also the worry that the training data of the model was contaminated with an evaluation dataset. The model could then just have memorised how it should respond to the questions in order to get a good score. This would of course not tell us at all how the model behaves in the real world.</p>
+<p>While there are many more challenges evals have to overcome to be effective, we should acknowledge that the field of AI evaluations in the sense as we see them today is still very young and there are many future directions to be explored. These could include questions like</p>
+<ul>
+<li>How can we make evals more realistic to real world settings?</li>
+<li>How can we ensure real-world safety from sandbox-safety?</li>
+<li>How can we evaluate more complex capabilities?</li>
+<li>How can we measure safety without posing a risk during the eval?</li>
+<li>How can we measure the safety of agents?</li>
+</ul>
+<h3 id="conclusions">Conclusions</h3>
+<p>Measuring the safety of AI systems in particular LLMs is hard because LLMs are complex systems living in complex systems. While there is already a gap between capabilities advancement and the evaluations we have, this gap is likely to widen quickly. Therefore, we need more effort in developing high quality evals that allow us to gain a holistic picture of the capabilities and the alignment of AIs. The future of responsible AI development depends on many factors, but without better ways to measure safety, we&rsquo;ll be building powerful systems whose risks we cannot properly understand.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/theaLilott" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/manon-kempermann-0a8396263/" target="_blank" rel="noopener noreferrer me"
+    title="Linkedin">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 Manon Kempermann.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://www.manonkempermann.eu/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>
