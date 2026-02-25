@@ -106,5 +106,17 @@
       
     </item>
     
+    <item>
+      <title>Publications</title>
+      <link>https://www.manonkempermann.eu/page/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.manonkempermann.eu/page/publications/</guid>
+      
+      <description>&lt;p&gt;&lt;strong&gt;Manon Kempermann&lt;/strong&gt;, Sai Suresh Macharla Vasu, Mahalakshmi Raveenthiran, Theo Farrell, Ingmar Weber: &lt;a href=&#34;https://www.manonkempermann.eu/pdf/challenges_of_evaluating_llm_safety_for_user_welfare.pdf&#34;&gt;Challenges of Evaluating LLM Safety for User Welfare&lt;/a&gt;, IASEAI 2026, to appear.&lt;/p&gt;
+&lt;p&gt;Jianlong Zhu, &lt;strong&gt;Manon Lilott Kempermann&lt;/strong&gt;, Vikram Kamath Cannanure, Alexander Hartland, Rosa M. Navarrete, Giuseppe Carteny, Daniela Braun, Ingmar Weber: Learn, Explore and Reflect by Chatting: Understanding the Value of an LLM-Based Voting Advice Application Chatbot, ACM Conversational User Interfaces (CUI), Paper: &lt;a href=&#34;https://dl.acm.org/doi/10.1145/3719160.3736611&#34;&gt;https://dl.acm.org/doi/10.1145/3719160.3736611&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
   </channel>
 </rss>
